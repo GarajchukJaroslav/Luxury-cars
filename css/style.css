@@ -1,0 +1,548 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+
+/* Header */
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    color: white;
+    background: #000;  
+}
+
+.header{
+    padding-top: 40px;
+    background: #000000;
+}
+
+.header-container{
+    align-items: center;
+    margin-right: 120px;
+    margin-left: 120px;
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.logo-wrapper{
+    margin-right: 410px;
+}
+
+.header-title{
+    display: none;
+}
+
+.header-nav{
+    display: flex;
+    gap: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin-right: 72px;
+}
+
+.header-btn{
+    padding: 12px 24px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #EE8313;
+    text-align: center;
+}
+
+/* Main-section */
+
+.main{
+    display: flex;
+    margin: 0 auto;
+    width: 1440px;
+    padding-top: 167px;
+}
+
+.main-wrap{
+    display: flex;
+}
+
+.main-fst-wrapp{
+    flex-direction: column;
+    margin-left: 120px;
+    width: 434px;
+}
+
+.main-title{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.006em;
+    padding-bottom: 32px;
+}
+
+.main-text{
+    font-size: 17px;
+    line-height: 28px;
+    font-family: Be Vietnam Pro;
+    letter-spacing: -0.40799999237060547px;
+    color: #FFFFFF;
+    padding-bottom: 48px;
+    opacity: .7;
+}
+
+.main-btn-wrapper{
+    display: flex;
+    gap: 35px;
+    padding-bottom: 48px;
+}
+
+.main-btn{
+    padding: 12px 24px;
+    background: #EE8313;
+    font-size: 16px;
+}
+
+.sec-btn{
+    padding: 12px 24px;
+    border: 1px solid #EE8313;
+    color: #EE8313;
+}
+
+.main-other-btn{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.main-cars-link{
+    margin-right: 48px;
+}
+
+.main-cars-link::before{
+    content: "500+";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.0041em;
+    margin-right: 16px;
+}
+
+.main-deal-link::before{
+    content: '#1';
+    padding-right: 16px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.0041em;
+}
+
+.main__img-wrapper{
+    position: relative;
+}
+
+.main__img-bg{
+    position: absolute;
+    top: -60px;
+    right: 0px;
+    z-index: -9;
+    width: 657px;
+    height: 524px;
+    background: #3434344D;
+}
+
+/* Cars */
+
+.cars{
+    margin: 0 auto;
+    width: 1220px;
+}
+
+.cars__title{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.006em;
+}
+
+.cars__title-wrapper{
+    margin-left: 120px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    width: 1220px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.cars-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 1220px;
+    gap: 32px;
+    /* margin: 0px 120px 60px 120px; */
+}
+
+.example-1{
+    position: relative;
+    background-image: url("../img/car-1.png");
+    background-repeat: no-repeat;
+    width: 584px;
+    height: 524px;
+    background-size: cover;
+}
+
+.example-2{
+    position: relative;
+    background-image: url("../img/car-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.example-3{
+    position: relative;
+    background-image: url("../img/car-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.example-4{
+    position: relative;
+    background-image: url("../img/car-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cars__block-title{
+    margin-top: 48px;
+    margin-left: 48px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0.006em;
+}
+
+.cars__block-text{
+    position: absolute;
+    bottom: 48px;
+    right: 90px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.006em;
+}
+
+.cars__block-text::after{
+    position: absolute;
+    padding-left: 20px;
+    content: "";
+    background-image: url("../img/svg/arrow.svg");
+    background-position: center;
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+}
+
+
+/* Services */
+
+.services{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.services-cards-wrapper{
+    display: flex;
+    gap: 24px;
+    padding-bottom: 60px;
+    padding-left: 120px;
+}
+
+.services-title{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.006em;
+    padding-top: 60px;
+    padding-left: 120px;
+    padding-bottom: 66px;
+}
+
+.services-card-wrapper{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.006em;
+}
+
+.services-card__title{
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.services-card__text{
+    display: block;
+    width: 384px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.006em;
+    opacity: 0.6;
+}
+
+
+/* Destinations */
+
+.destinations{
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.dest-title{
+    text-align: center;
+    margin: 0 auto;
+    width: 561px;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.006em;    
+}
+
+.dest-cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.dest-card-wrapper{
+    background: #171717;
+    width: 384px;
+}
+
+.dest-card-title{
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.006em;
+}
+
+.dest-under-title{
+    padding-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.0041em;
+    opacity: 0.6;
+}
+
+.dest-text{
+    padding-bottom: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.0041em;
+    position: relative;
+    left: 42px;
+}
+
+.dest-text::before{
+    content: "";
+    position: absolute;
+    background-image: url('/img/svg/car.svg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 30px;
+    left: -42px;
+    width: 30px;
+}
+
+.dest-search{
+    color: #EE8313;
+    padding-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.0041em;
+}
+
+
+
+/* Location */
+
+.location{
+    width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 102px;
+}
+
+.location-title{
+    text-align: center;
+    margin-top: 102px;
+    margin-bottom: 40px;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.006em;
+}
+
+/* Footer */
+
+footer{
+    position: relative;
+    background: #1F1905;
+    width: 1440px;
+    margin: 0 auto;
+    height: 377px;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.footer-logo-wrap{
+    display: flex;
+}
+
+.footer-logo{
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
+.footer-fst-title{
+    margin-top: 52px;
+    margin-left: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.footer-fst-text{
+    margin-top: 64px;
+    margin-left: 121px;
+    width: 235px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+}
+
+.footer-sec{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 318px;
+}
+
+.list-title{
+    margin-bottom: 32px;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+.item-marg{
+    margin-bottom: 28px;
+}
+
+.font{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    opacity: 0.6;
+}
+
+.comp{
+    margin-right: 67px;
+}
+
+.supp{
+    margin-right: 48px;
+}
+
+.catege{
+    margin-right: 96px;
+}
+
+.footer-icons-wrapper{
+    position: absolute;
+    top: 50px;
+    right: 120px;
+}
+
+.footer-end{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    background: #EE8313;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
